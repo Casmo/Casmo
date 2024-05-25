@@ -1,5 +1,11 @@
-### Hi there 👋
+## Whoah, hello there 👋
+It's me, Mathieu aka Casmo! I'm a developer creating stuff and doing some magic. I work at the amazing company 🌪️ [Vormkracht10](https://vormkracht10.nl). I'm also the proud founder of 🎮 [Couchfriends.com](https://couchfriends.com)!
 
+I'm a happy developer working with, but not limited to: Laravel, C++, Unreal Engine, Three.js, NodeJS, React.
+
+- 🔭 I’m currently working with Laravel
+- 🌱 I’m currently learning Unreal Engine 5.0
+- 📫 How to reach me: [linkedin.com/in/mathieuderuiter](https://www.linkedin.com/in/mathieuderuiter/)
 <!--
 **Casmo/Casmo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
