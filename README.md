@@ -5,4 +5,5 @@ I'm a happy developer working with, but not limited to: Laravel, C++, Unreal Eng
 
 - 🔭 I’m currently working on large Laravel projects, some handling 50,000,000 request per month!
 - 🌱 I’m currently learning Unreal Engine 5.0, building some awesome pew pew in C pew pew.
+- ⭐ Checkout my dev blog: [mathieuderuiter.nl](https://mathieuderuiter.nl)
 - 📫 How to reach me: [linkedin.com/in/mathieuderuiter](https://www.linkedin.com/in/mathieuderuiter/)
