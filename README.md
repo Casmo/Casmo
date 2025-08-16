@@ -1,7 +1,8 @@
 ## Whoah, hello there 👋
 It's me, Mathieu aka Casmo! I'm a developer creating stuff and doing some magic. I work at the amazing company 🌪️ [Vormkracht10](https://vormkracht10.nl) and I'm also the proud founder of 🎮 [Couchfriends.com](https://couchfriends.com) and 💥 [Spark of Chaos](Https://sparkofchaos.com)!
 
-<video width="900" height="300" src="https://github.com/user-attachments/assets/246a3aaa-56d9-4d3c-82db-4b4d27851e7e" autoplay muted></video>
+![20250816_130930_0004](https://github.com/user-attachments/assets/eef58a01-2992-4b81-bcbd-87de85894fae)
+
 
 I'm a happy developer working with, but not limited to: Laravel, C++, Unreal Engine, Three.js, NodeJS, React.
 
