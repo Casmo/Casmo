@@ -9,9 +9,9 @@ I'm a happy developer working with, but not limited to: Laravel, C++, Unreal Eng
 - 📫 How to reach me: [linkedin.com/in/mathieuderuiter](https://www.linkedin.com/in/mathieuderuiter/)
 
 
-<table>
+<table width="100%">
   <tr>
-    <td width="50%"><a href="https://sparkofchaos.com/#games"><img width="100%" src="images/kabonk-game.gif"></a><br><sup><strong>Game:</strong> Kabonk!</sup>
+    <td width="50%"><a href="https://sparkofchaos.com/#games"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/kabonk-game.gif"></a><br><sup><strong>Game:</strong> Kabonk!</sup>
     <td width="50%"></td>
   </tr>
 </table>
