@@ -1,5 +1,5 @@
 ## Whoah, hello there 👋
-It's me, Mathieu aka Casmo! I'm a developer creating stuff and doing some magic. I work at the amazing company 🌪️ [Vormkracht10](https://vormkracht10.nl) and I'm also the proud founder of 🎮 [Couchfriends.com](https://couchfriends.com) and 💥 [Spark of Chaos](Https://sparkofchaos.com)!
+It's me, Mathieu aka Casmo! I'm a developer creating stuff and doing some magic. I work at the amazing company 🌪️ [UX](https://ux.nl) and I'm also the proud founder of 🎮 [Couchfriends.com](https://couchfriends.com) and 💥 [Spark of Chaos](Https://sparkofchaos.com)!
 
 I'm a happy developer working with, but not limited to: Laravel, C++, Unreal Engine, Three.js and, React.
 
