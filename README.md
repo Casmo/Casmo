@@ -3,7 +3,7 @@ It's me, Mathieu aka Casmo! I'm a developer creating stuff and doing some magic.
 
 I'm a happy developer working with, but not limited to: Laravel, C++, Unreal Engine, Three.js and, React.
 
-- 🔭 I’m currently working on large Laravel projects, some handling iver 50,000,000 request per month!
+- 🔭 I’m working on large Laravel projects, some handling over 50,000,000 request per month!
 - 🌱 Learning Unreal Engine 5.0, building some awesome pew pew in C pew pew, see [Spark of Chaos](https://sparkofchaos.com).
 - ⭐ Checkout my dev blog: [mathieuderuiter.nl](https://mathieuderuiter.nl)
 - 📫 How to reach me: [linkedin.com/in/mathieuderuiter](https://www.linkedin.com/in/mathieuderuiter/)
