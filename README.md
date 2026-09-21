@@ -16,6 +16,7 @@ I'm a happy developer working with, but not limited to: Laravel, C++, Unreal Eng
   </tr>
   <tr>
     <td width="50%"><a href="https://ux.nl"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/vormkracht10.gif"></a><br><sup><strong>Company:</strong> UX</sup>
-    <td width="50%">&nbsp;</td>
+    <td width="50%"><a href="https://mathieuderuiter.nl"><img width="2400" height="1260" alt="image" src="https://github.com/user-attachments/assets/f074c62b-aaf0-4b91-9269-d3451d60cb85" /> </a><br><sup><strong>Personal:</strong> Blog</sup>
+</td>
   </tr>
 </table>
