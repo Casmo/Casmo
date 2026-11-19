@@ -7,7 +7,7 @@ I'm a developer at [UX](https://ux.nl), building large Laravel platforms and ope
 <table>
   <tr>
     <td width="33%" valign="top">
-      <!-- clip: kabonk.webp -->
+      <a href="https://store.steampowered.com/app/3628790/Kabonk/"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/kabonk.webp" alt="Kabonk! gameplay"></a><br>
       <a href="https://store.steampowered.com/app/3628790/Kabonk/"><strong>Kabonk!</strong></a> — Unreal Engine 5, on Steam
     </td>
     <td width="33%" valign="top">
@@ -15,13 +15,13 @@ I'm a developer at [UX](https://ux.nl), building large Laravel platforms and ope
       <a href="https://store.steampowered.com/app/5467940"><strong>Fernweh</strong></a> — Three.js, coming to Steam
     </td>
     <td width="33%" valign="top">
-      <!-- clip: dyneria.webp -->
+      <a href="https://store.steampowered.com/app/5096670"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/dyneria.webp" alt="Dyneria gameplay"></a><br>
       <a href="https://store.steampowered.com/app/5096670"><strong>Dyneria</strong></a> — custom Rust/wgpu engine, coming to Steam
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <!-- clip: bonk.webp -->
+      <img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/bonk.webp" alt="Bonk! gameplay"><br>
       <strong>Bonk!</strong> — Godot, in development
     </td>
     <td width="33%" valign="top">

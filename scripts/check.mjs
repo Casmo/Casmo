@@ -243,6 +243,15 @@ check('the Tower Defense tile shows its Clip', () => {
   if (!t || !t.imgs.map(imageFile).includes('tower-defense.webp')) fail('Tower Defense tile has no tower-defense.webp image');
 });
 
+// ---------- checks: trailer/screenshot Clips (ticket #5) ----------
+
+for (const [game, file] of [['Kabonk!', 'kabonk.webp'], ['Dyneria', 'dyneria.webp'], ['Bonk!', 'bonk.webp']]) {
+  check(`the ${game} tile shows its Clip`, () => {
+    const t = gameTiles().find((x) => x.caption.startsWith(game));
+    if (!t || !t.imgs.map(imageFile).includes(file)) fail(`${game} tile has no ${file} image`);
+  });
+}
+
 // ---------- checks: website screenshots (ticket #7) ----------
 
 check('Web development section has 3 linked website screenshots (WebP, ~320px wide, under 200 KB) with captions', () => {
