@@ -57,7 +57,7 @@ Open source contributions to: Laravel, CakePHP, Filament, Laravel Scout, Laravel
 
 Organisations: UX, Couchfriends, Spark of Chaos, Backstage, Rocketeers, Cloudoe
 
-<!-- activity-line: activity.svg -->
+<img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/activity.svg" alt="GitHub contributions per year, 2010 to 2026">
 
 <table>
   <tr>

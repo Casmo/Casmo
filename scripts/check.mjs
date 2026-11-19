@@ -209,6 +209,42 @@ check('Web development section has 3 linked website screenshots (WebP, ~320px wi
     const width = Number(sh('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width', '-of', 'csv=p=0', join(imagesDir, file)]).trim());
     if (width < 300 || width > 340) fail(`${file} is ${width}px wide, expected about 320px`);
   }
+
+// ---------- checks: Activity line (ticket #6) ----------
+
+check('Activity line is a valid SVG with 17 one-colour bars (2010-2026), shown in Web development', () => {
+  const ref = [...section('Web development').matchAll(/<img\b[^>]*\bsrc="([^"]+)"/g)].map((m) => m[1])
+    .find((r) => imageFile(r) === 'activity.svg');
+  if (!ref) fail('Web development section does not show images/activity.svg');
+  if (!ref.startsWith(IMAGE_URL_PREFIX)) fail(`activity.svg not referenced through ${IMAGE_URL_PREFIX}`);
+  const file = join(imagesDir, 'activity.svg');
+  if (!existsSync(file)) fail('images/activity.svg missing');
+  const svg = readFileSync(file, 'utf8');
+  // Well-formedness: one <svg> root in the SVG namespace, every element closed in order.
+  if (!/^\s*(<\?xml[^>]*\?>\s*)?<svg\b[^>]*\bxmlns="http:\/\/www\.w3\.org\/2000\/svg"/.test(svg)) fail('root is not <svg xmlns="http://www.w3.org/2000/svg">');
+  if (!/<\/svg>\s*$/.test(svg)) fail('does not end with </svg>');
+  const stack = [];
+  for (const [, close, name, selfClose] of svg.replace(/<!--[\s\S]*?-->|<\?[\s\S]*?\?>/g, '').matchAll(/<(\/?)([\w:-]+)(?:"[^"]*"|'[^']*'|[^>"'])*?(\/?)>/g)) {
+    if (close) { if (stack.pop() !== name) fail(`unbalanced </${name}>`); }
+    else if (!selfClose) stack.push(name);
+  }
+  if (stack.length) fail(`unclosed <${stack.join('>, <')}>`);
+  if (/&(?!(amp|lt|gt|quot|apos|#\d+|#x[0-9a-f]+);)/i.test(svg)) fail('unescaped &');
+  const bars = [...svg.matchAll(/<rect\b[^>]*\bclass="bar"[^>]*>/g)].map((m) => ({
+    year: Number(m[0].match(/data-year="(\d+)"/)?.[1]),
+    height: Number(m[0].match(/\bheight="([\d.]+)"/)?.[1]),
+    fill: m[0].match(/\bfill="([^"]+)"/)?.[1] ?? svg.match(/\.bar\s*\{[^}]*fill:\s*([^;}\s]+)/)?.[1],
+  }));
+  if (bars.length !== 17) fail(`expected 17 bars, found ${bars.length}`);
+  const years = bars.map((b) => b.year).join();
+  if (years !== Array.from({ length: 17 }, (_, i) => 2010 + i).join()) fail(`bar years ${years}`);
+  const fills = new Set(bars.map((b) => b.fill));
+  if (fills.size !== 1 || !bars[0].fill) fail(`bars must share one colour, found ${[...fills].join(', ')}`);
+  if (bars.some((b) => !(b.height >= 0))) fail('bar without a valid height');
+  // Spec data: 2026 (6213) is the busiest year, 2011 (0) the quietest.
+  const tallest = bars.reduce((a, b) => (b.height > a.height ? b : a));
+  const lowest = bars.reduce((a, b) => (b.height < a.height ? b : a));
+  if (tallest.year !== 2026 || lowest.year !== 2011) fail(`tallest bar ${tallest.year}, lowest ${lowest.year}; expected 2026 and 2011`);
 });
 
 // ---------- report ----------

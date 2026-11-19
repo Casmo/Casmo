@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="96" viewBox="0 0 800 96" role="img" aria-label="GitHub contributions per year, 2010 to 2026">
+  <title>GitHub contributions per year, 2010 to 2026</title>
+  <g>
+  <rect class="bar" data-year="2010" x="7.1" y="79" width="32.9" height="1" rx="2" fill="#5f8f6f"><title>2010: 19 contributions</title></rect>
+  <rect class="bar" data-year="2011" x="54.1" y="80" width="32.9" height="0" rx="2" fill="#5f8f6f"><title>2011: 0 contributions</title></rect>
+  <rect class="bar" data-year="2012" x="101.2" y="79" width="32.9" height="1" rx="2" fill="#5f8f6f"><title>2012: 14 contributions</title></rect>
+  <rect class="bar" data-year="2013" x="148.3" y="79" width="32.9" height="1" rx="2" fill="#5f8f6f"><title>2013: 38 contributions</title></rect>
+  <rect class="bar" data-year="2014" x="195.3" y="75.5" width="32.9" height="4.5" rx="2" fill="#5f8f6f"><title>2014: 347 contributions</title></rect>
+  <rect class="bar" data-year="2015" x="242.4" y="76.1" width="32.9" height="3.9" rx="2" fill="#5f8f6f"><title>2015: 305 contributions</title></rect>
+  <rect class="bar" data-year="2016" x="289.4" y="70.4" width="32.9" height="9.6" rx="2" fill="#5f8f6f"><title>2016: 742 contributions</title></rect>
+  <rect class="bar" data-year="2017" x="336.5" y="69.4" width="32.9" height="10.6" rx="2" fill="#5f8f6f"><title>2017: 823 contributions</title></rect>
+  <rect class="bar" data-year="2018" x="383.6" y="75" width="32.9" height="5" rx="2" fill="#5f8f6f"><title>2018: 388 contributions</title></rect>
+  <rect class="bar" data-year="2019" x="430.6" y="63.3" width="32.9" height="16.7" rx="2" fill="#5f8f6f"><title>2019: 1300 contributions</title></rect>
+  <rect class="bar" data-year="2020" x="477.7" y="57.4" width="32.9" height="22.6" rx="2" fill="#5f8f6f"><title>2020: 1755 contributions</title></rect>
+  <rect class="bar" data-year="2021" x="524.7" y="63.5" width="32.9" height="16.5" rx="2" fill="#5f8f6f"><title>2021: 1281 contributions</title></rect>
+  <rect class="bar" data-year="2022" x="571.8" y="65.8" width="32.9" height="14.2" rx="2" fill="#5f8f6f"><title>2022: 1102 contributions</title></rect>
+  <rect class="bar" data-year="2023" x="618.8" y="63.1" width="32.9" height="16.9" rx="2" fill="#5f8f6f"><title>2023: 1315 contributions</title></rect>
+  <rect class="bar" data-year="2024" x="665.9" y="61.2" width="32.9" height="18.8" rx="2" fill="#5f8f6f"><title>2024: 1461 contributions</title></rect>
+  <rect class="bar" data-year="2025" x="713" y="53.5" width="32.9" height="26.5" rx="2" fill="#5f8f6f"><title>2025: 2059 contributions</title></rect>
+  <rect class="bar" data-year="2026" x="760" y="0" width="32.9" height="80" rx="2" fill="#5f8f6f"><title>2026: 6213 contributions</title></rect>
+  </g>
+  <g fill="#5f8f6f" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="11">
+    <text x="23.5" y="93" text-anchor="middle">2010</text>
+    <text x="776.5" y="93" text-anchor="middle">2026</text>
+  </g>
+</svg>
