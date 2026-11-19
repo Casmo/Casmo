@@ -22,3 +22,9 @@ The professional part of the profile: a summary of Mathieu's web development wor
 
 ## Contact footer
 The closing line with ways to reach Mathieu.
+
+## Timeline
+The five eras of Mathieu's web development work, in order and without dates, inside the Web development section.
+
+## Activity line
+A small yearly bar strip of Mathieu's GitHub contributions since 2010, inside the Web development section.
