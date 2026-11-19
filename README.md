@@ -1,22 +1,66 @@
-## Whoah, hello there 👋
-It's me, Mathieu aka Casmo! I'm a developer creating stuff and doing some magic. I work at the amazing company 🌪️ [UX](https://ux.nl) and I'm also the proud founder of 🎮 [Couchfriends.com](https://couchfriends.com) and 💥 [Spark of Chaos](Https://sparkofchaos.com)!
+### Hi, I'm Mathieu, aka Casmo
 
-I'm a happy developer working with, but not limited to: Laravel, C++, Unreal Engine, Three.js and, React.
+I'm a developer at [UX](https://ux.nl), building large Laravel platforms and open source tools. I'm also the founder of [Couchfriends](https://couchfriends.com) and [Spark of Chaos](https://sparkofchaos.com), where I make games with Unreal Engine, Three.js and more.
 
-- 🔭 I’m working on large Laravel projects, some handling over 50,000,000 request per month!
-- 🌱 Learning Unreal Engine 5.0, building some awesome pew pew in C pew pew, see [Spark of Chaos](https://sparkofchaos.com).
-- ⭐ Checkout my dev blog: [mathieuderuiter.nl](https://mathieuderuiter.nl)
-- 📫 How to reach me: [linkedin.com/in/mathieuderuiter](https://www.linkedin.com/in/mathieuderuiter/)
+## Games
 
-
-<table width="100%">
+<table>
   <tr>
-    <td width="50%"><a href="https://store.steampowered.com/app/3628790/Kabonk/"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/kabonk-game.gif"></a><br><sup><strong>Game:</strong> Kabonk!</sup>
-    <td width="50%"><a href="https://couchfriends.com"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/couchfriends-opensource-games.gif"></a><br><sup><strong>Project:</strong> Couchfriends</sup></td>
+    <td width="33%" valign="top">
+      <!-- clip: kabonk.webp -->
+      <a href="https://store.steampowered.com/app/3628790/Kabonk/"><strong>Kabonk!</strong></a> — Unreal Engine 5, on Steam
+    </td>
+    <td width="33%" valign="top">
+      <!-- clip: fernweh.webp -->
+      <a href="https://store.steampowered.com/app/5467940"><strong>Fernweh</strong></a> — Three.js, coming to Steam
+    </td>
+    <td width="33%" valign="top">
+      <!-- clip: dyneria.webp -->
+      <a href="https://store.steampowered.com/app/5096670"><strong>Dyneria</strong></a> — custom Rust/wgpu engine, coming to Steam
+    </td>
   </tr>
   <tr>
-    <td width="50%"><a href="https://ux.nl"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/vormkracht10.gif"></a><br><sup><strong>Company:</strong> UX</sup>
-    <td width="50%"><a href="https://mathieuderuiter.nl"><img width="2400" height="1260" alt="image" src="https://github.com/user-attachments/assets/f074c62b-aaf0-4b91-9269-d3451d60cb85" /> </a><br><sup><strong>Personal:</strong> Blog</sup>
-</td>
+    <td width="33%" valign="top">
+      <!-- clip: bonk.webp -->
+      <strong>Bonk!</strong> — Godot, in development
+    </td>
+    <td width="33%" valign="top">
+      <!-- clip: treejs.webp -->
+      <a href="https://mathieuderuiter.nl/tree.js/"><strong>tree.js</strong></a> — procedural trees, Three.js / WebGPU
+    </td>
+    <td width="33%" valign="top">
+      <!-- clip: spaceshooter.webp -->
+      <a href="https://casmo.itch.io/spaceshooter-3"><strong>Spaceshooter</strong></a> — TypeScript, PixiJS
+    </td>
+  </tr>
+  <tr>
+    <td width="33%" valign="top">
+      <!-- clip: couchfriends.webp -->
+      <a href="https://couchfriends.com"><strong>Couchfriends</strong></a> — phone-as-controller party games, open source
+    </td>
+    <td width="33%" valign="top">
+      <!-- clip: tower-defense.webp -->
+      <a href="https://casmo.itch.io/threejs-tower-defense"><strong>Tower Defense</strong></a> — Three.js
+    </td>
   </tr>
 </table>
+
+## Web development
+
+1. PHP and CakePHP: browser game engine, contributor to CakePHP and its docs.
+2. HTML5 and Node.js: Three.js / PixiJS, WebSocket multiplayer, early TypeScript adopter; founded Couchfriends (open source).
+3. Client platforms: CMS/CRM builds, Angular, tools for a tabletop RPG community (GoblinWorkshop).
+4. Laravel at UX: large Laravel platforms (50M+ requests/month), Vue, React, Tailwind; SaaS products Rocketeers and Cloudoe.
+5. Now: Filament and Backstage CMS (open source), plus AI agent tooling.
+
+Open source contributions to: Laravel, CakePHP, Filament, Laravel Scout, Laravel Actions, PixiJS, Mailgun PHP
+
+Organisations: UX, Couchfriends, Spark of Chaos, Backstage, Rocketeers, Cloudoe
+
+<!-- activity-line: activity.svg -->
+
+<!-- website-screenshots: ux.webp, backstage.webp, rocketeers.webp -->
+
+---
+
+Blog: [mathieuderuiter.nl](https://mathieuderuiter.nl) · LinkedIn: [linkedin.com/in/mathieuderuiter](https://www.linkedin.com/in/mathieuderuiter/) · Spark of Chaos: [sparkofchaos.com](https://sparkofchaos.com)
