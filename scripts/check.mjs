@@ -190,6 +190,59 @@ check('old GIFs are gone', () => {
   if (left.length) fail(`still present or referenced: ${left.join(', ')}`);
 });
 
+// ---------- checks: Clips (ticket #3, ADR 0001) ----------
+
+/**
+ * Parse an animated WebP container (RIFF): canvas size and per-frame durations in ms.
+ * Pure JS so the check needs no webpmux; ffmpeg's WebP demuxer does not expose ANMF durations.
+ */
+function webpInfo(name) {
+  const b = readFileSync(join(imagesDir, name));
+  if (b.toString('ascii', 0, 4) !== 'RIFF' || b.toString('ascii', 8, 12) !== 'WEBP') fail(`${name} is not a WebP file`);
+  const info = { width: 0, height: 0, animated: false, durations: [] };
+  const u24 = (o) => b[o] | (b[o + 1] << 8) | (b[o + 2] << 16);
+  for (let o = 12; o + 8 <= b.length; ) {
+    const id = b.toString('ascii', o, o + 4);
+    const size = b.readUInt32LE(o + 4);
+    const d = o + 8;
+    if (id === 'VP8X') {
+      info.animated = !!(b[d] & 0x02);
+      info.width = u24(d + 4) + 1;
+      info.height = u24(d + 7) + 1;
+    } else if (id === 'ANMF') {
+      info.durations.push(u24(d + 12));
+    }
+    o = d + size + (size & 1);
+  }
+  return info;
+}
+
+/** Clips: every image inside a Game tile. */
+const clipFiles = () => gameTiles().flatMap((t) => t.imgs.map(imageFile).filter(Boolean));
+
+check('every Clip is an animated WebP under 2 MB, about 320px wide, 60fps (frames <= 17ms), 3-5 s long', () => {
+  const problems = [];
+  for (const f of clipFiles()) {
+    if (!f.endsWith('.webp')) { problems.push(`${f}: not .webp`); continue; }
+    if (!existsSync(join(imagesDir, f))) { problems.push(`${f}: missing`); continue; }
+    const size = fileSize(f);
+    if (size >= 2 * 1024 * 1024) problems.push(`${f}: ${(size / 1048576).toFixed(2)} MB (max 2 MB)`);
+    const w = webpInfo(f);
+    if (!w.animated || w.durations.length < 2) { problems.push(`${f}: not an animated WebP`); continue; }
+    if (w.width < 300 || w.width > 340) problems.push(`${f}: ${w.width}px wide (expected about 320)`);
+    const slow = w.durations.filter((ms) => ms > 17 || ms <= 0);
+    if (slow.length) problems.push(`${f}: ${slow.length} frame(s) with duration > 17ms or 0 (e.g. ${slow[0]}ms)`);
+    const total = w.durations.reduce((a, c) => a + c, 0);
+    if (total < 3000 || total > 5000) problems.push(`${f}: ${total}ms long (expected 3-5 s)`);
+  }
+  if (problems.length) fail(problems.join('; '));
+});
+
+check('the Tower Defense tile shows its Clip', () => {
+  const t = gameTiles().find((x) => x.caption.startsWith('Tower Defense'));
+  if (!t || !t.imgs.map(imageFile).includes('tower-defense.webp')) fail('Tower Defense tile has no tower-defense.webp image');
+});
+
 // ---------- report ----------
 
 for (const [ok, name, msg] of results) console.log(`${ok ? 'PASS' : 'FAIL'}  ${name}${ok ? '' : `\n      ${msg}`}`);

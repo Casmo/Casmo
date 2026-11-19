@@ -39,7 +39,7 @@ I'm a developer at [UX](https://ux.nl), building large Laravel platforms and ope
       <a href="https://couchfriends.com"><strong>Couchfriends</strong></a> — phone-as-controller party games, open source
     </td>
     <td width="33%" valign="top">
-      <!-- clip: tower-defense.webp -->
+      <a href="https://casmo.itch.io/threejs-tower-defense"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/tower-defense.webp" alt="Tower Defense gameplay"></a><br>
       <a href="https://casmo.itch.io/threejs-tower-defense"><strong>Tower Defense</strong></a> — Three.js
     </td>
   </tr>
