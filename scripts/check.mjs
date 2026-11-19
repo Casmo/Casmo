@@ -190,6 +190,27 @@ check('old GIFs are gone', () => {
   if (left.length) fail(`still present or referenced: ${left.join(', ')}`);
 });
 
+check('Web development section has 3 linked website screenshots (WebP, ~320px wide, under 200 KB) with captions', () => {
+  const sites = [
+    ['https://ux.nl', 'ux.webp'],
+    ['https://backstagephp.com', 'backstage.webp'],
+    ['https://rocketeersapp.com', 'rocketeers.webp'],
+  ];
+  const cells = section('Web development').match(/<td[\s\S]*?<\/td>/g) || [];
+  for (const [url, file] of sites) {
+    const cell = cells.find((c) => c.includes(IMAGE_URL_PREFIX + file));
+    if (!cell) fail(`no table cell with ${file}`);
+    if (!new RegExp(`<a href="${url}/?"><img [^>]*${file}"`).test(cell)) fail(`${file} is not linked to ${url}`);
+    if (!stripTags(cell)) fail(`${file} has no caption`);
+    if (!images().includes(file)) fail(`images/${file} missing`);
+    const buf = readFileSync(join(imagesDir, file));
+    if (buf.toString('ascii', 0, 4) !== 'RIFF' || buf.toString('ascii', 8, 12) !== 'WEBP') fail(`${file} is not a WebP`);
+    if (fileSize(file) >= 200 * 1024) fail(`${file} is ${fileSize(file)} bytes, must be under 200 KB`);
+    const width = Number(sh('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width', '-of', 'csv=p=0', join(imagesDir, file)]).trim());
+    if (width < 300 || width > 340) fail(`${file} is ${width}px wide, expected about 320px`);
+  }
+});
+
 // ---------- report ----------
 
 for (const [ok, name, msg] of results) console.log(`${ok ? 'PASS' : 'FAIL'}  ${name}${ok ? '' : `\n      ${msg}`}`);

@@ -59,7 +59,22 @@ Organisations: UX, Couchfriends, Spark of Chaos, Backstage, Rocketeers, Cloudoe
 
 <!-- activity-line: activity.svg -->
 
-<!-- website-screenshots: ux.webp, backstage.webp, rocketeers.webp -->
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <a href="https://ux.nl"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/ux.webp" alt="ux.nl homepage"></a><br>
+      <a href="https://ux.nl">UX</a> — agency site, Laravel
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://backstagephp.com"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/backstage.webp" alt="backstagephp.com homepage"></a><br>
+      <a href="https://backstagephp.com">Backstage</a> — Filament plugins and Laravel packages
+    </td>
+    <td width="33%" valign="top">
+      <a href="https://rocketeersapp.com"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/rocketeers.webp" alt="rocketeersapp.com homepage"></a><br>
+      <a href="https://rocketeersapp.com">Rocketeers</a> — control panel for your own cloud
+    </td>
+  </tr>
+</table>
 
 ---
 
