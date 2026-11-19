@@ -209,6 +209,7 @@ check('Web development section has 3 linked website screenshots (WebP, ~320px wi
     const width = Number(sh('ffprobe', ['-v', 'error', '-select_streams', 'v:0', '-show_entries', 'stream=width', '-of', 'csv=p=0', join(imagesDir, file)]).trim());
     if (width < 300 || width > 340) fail(`${file} is ${width}px wide, expected about 320px`);
   }
+});
 
 // ---------- checks: Activity line (ticket #6) ----------
 
