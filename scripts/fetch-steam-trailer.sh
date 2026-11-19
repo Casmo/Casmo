@@ -6,6 +6,10 @@
 # Reads the movie list from the public store API (https://store.steampowered.com/api/appdetails)
 # and pulls the DASH H.264 stream (Steam's DASH renditions are 60fps; the HLS ones are 30fps).
 # movie-index picks a trailer from the list (default 0 = the highlighted/first one).
+#
+# Example (Fernweh, the seasons passing over the campsite, 85-89.5 s into the trailer):
+#   scripts/fetch-steam-trailer.sh 5467940 /tmp/fernweh.mp4
+#   START=85 DURATION=4.5 XFADE_FRAMES=30 scripts/encode-clip.sh /tmp/fernweh.mp4 images/fernweh.webp
 set -euo pipefail
 appid=${1:?usage: fetch-steam-trailer.sh <appid> <out.mp4> [movie-index]}
 out=${2:?usage: fetch-steam-trailer.sh <appid> <out.mp4> [movie-index]}
