@@ -11,7 +11,7 @@ I'm a developer at [UX](https://ux.nl), building large Laravel platforms and ope
       <a href="https://store.steampowered.com/app/3628790/Kabonk/"><strong>Kabonk!</strong></a> — Unreal Engine 5, on Steam
     </td>
     <td width="33%" valign="top">
-      <!-- clip: fernweh.webp -->
+      <a href="https://store.steampowered.com/app/5467940"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/fernweh.webp" alt="Fernweh gameplay"></a><br>
       <a href="https://store.steampowered.com/app/5467940"><strong>Fernweh</strong></a> — Three.js, coming to Steam
     </td>
     <td width="33%" valign="top">
@@ -25,17 +25,17 @@ I'm a developer at [UX](https://ux.nl), building large Laravel platforms and ope
       <strong>Bonk!</strong> — Godot, in development
     </td>
     <td width="33%" valign="top">
-      <!-- clip: treejs.webp -->
+      <a href="https://mathieuderuiter.nl/tree.js/"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/treejs.webp" alt="tree.js tree through the seasons"></a><br>
       <a href="https://mathieuderuiter.nl/tree.js/"><strong>tree.js</strong></a> — procedural trees, Three.js / WebGPU
     </td>
     <td width="33%" valign="top">
-      <!-- clip: spaceshooter.webp -->
+      <a href="https://casmo.itch.io/spaceshooter-3"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/spaceshooter.webp" alt="Spaceshooter gameplay"></a><br>
       <a href="https://casmo.itch.io/spaceshooter-3"><strong>Spaceshooter</strong></a> — TypeScript, PixiJS
     </td>
   </tr>
   <tr>
     <td width="33%" valign="top">
-      <!-- clip: couchfriends.webp -->
+      <a href="https://couchfriends.com"><img width="100%" src="https://raw.githubusercontent.com/casmo/casmo/master/images/couchfriends.webp" alt="Couchfriends games"></a><br>
       <a href="https://couchfriends.com"><strong>Couchfriends</strong></a> — phone-as-controller party games, open source
     </td>
     <td width="33%" valign="top">

@@ -252,6 +252,20 @@ for (const [game, file] of [['Kabonk!', 'kabonk.webp'], ['Dyneria', 'dyneria.web
   });
 }
 
+// ---------- checks: remaining Clips (Fernweh, tree.js, Spaceshooter, Couchfriends) ----------
+
+for (const [game, file] of [['Fernweh', 'fernweh.webp'], ['tree.js', 'treejs.webp'], ['Spaceshooter', 'spaceshooter.webp'], ['Couchfriends', 'couchfriends.webp']]) {
+  check(`the ${game} tile shows its Clip`, () => {
+    const t = gameTiles().find((x) => x.caption.startsWith(game));
+    if (!t || !t.imgs.map(imageFile).includes(file)) fail(`${game} tile has no ${file} image`);
+  });
+}
+
+check('every Game tile shows a Clip', () => {
+  const bare = gameTiles().filter((t) => !t.imgs.length).map((t) => t.caption);
+  if (bare.length) fail(`tiles without a Clip: ${bare.join('; ')}`);
+});
+
 // ---------- checks: website screenshots (ticket #7) ----------
 
 check('Web development section has 3 linked website screenshots (WebP, ~320px wide, under 200 KB) with captions', () => {
